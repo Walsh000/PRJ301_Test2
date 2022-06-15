@@ -35,7 +35,7 @@ public class AnualRequestDBContext extends DBContext<AnualRequest> {
     @Override
     public void insert(AnualRequest entity) {
         try {
-            String sql = "NSERT INTO [dbo].[AnualRequest]\n"
+            String sql = "INSERT INTO [dbo].[AnualRequest]\n"
                     + "           ([reason]\n"
                     + "           ,[from]\n"
                     + "           ,[to]\n"

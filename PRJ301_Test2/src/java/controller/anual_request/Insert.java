@@ -62,7 +62,7 @@ public class Insert extends HttpServlet {
         EmployeeDBContext employeeDBC = new EmployeeDBContext();
         ArrayList<Employee> empList = employeeDBC.list();
         request.setAttribute("empList", empList);
-        request.getRequestDispatcher("../view/anualrequest/Insert.jsp").forward(request, response);
+        request.getRequestDispatcher("../view/anualRequest/Insert.jsp").forward(request, response);
     } 
 
     /** 

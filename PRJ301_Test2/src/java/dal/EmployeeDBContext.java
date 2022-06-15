@@ -58,7 +58,7 @@ public class EmployeeDBContext extends DBContext<Employee> {
     public ArrayList<Employee> list() {
          ArrayList<Employee> empList = new ArrayList<>();
         try {
-            String sql = "SELECT eid, ename, gender, dob, did from Emp";
+            String sql = "SELECT eid, ename, gender, dob, did from emp";
             PreparedStatement statement = connection.prepareStatement(sql);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {

@@ -64,7 +64,7 @@
         </style>
     </head>
     <body>
-        <form class = 'form' action="/insert" method="POST">
+        <form class = 'form' action="insert" method="POST">
             <table>
                 <tr>
                     <th>Reason</th>
@@ -93,7 +93,7 @@
                         <select name="create" style="border-radius: 5px; border:0px; height: 30px;
                                 width: 50%; text-align: center">
                             <c:forEach items="${requestScope.empList}" var="emp">
-                                <option value="${emp.id}">
+                                <option value="${emp.ID}">
                                     ${emp.name} 
                                 </option>
                             </c:forEach>
@@ -107,7 +107,7 @@
                         <select name="review" style="border-radius: 5px; border:0px; height: 30px;
                                 width: 50%; text-align: center">
                             <c:forEach items="${requestScope.empList}" var="emp">
-                                <option value="${emp.id}">
+                                <option value="${emp.ID}">
                                     ${emp.name} 
                                 </option>
                             </c:forEach>
